@@ -1,46 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="./style.css">
-    <title></title> <!-- Title will be set by JavaScript -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Insure landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      .footer_bottom {
+      font-size: .9rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .footer_bottom a {
+      color: hsl(228, 45%, 44%);
+    }
+    .footer_bottom a:hover{
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <div class="container d-flex-inline">
-        <div class="logo">
-            <img src="./images/logo.svg" alt="logo">
-        </div>
+
+
+  <nav>
+    <div class="nav-header">
+      <a href="https://www.facebook.com/drougnov.bd.9" aria-label="header-logo" class="logo"><img src="./images/logo.svg" alt="logo"></a>
+      <img src="./images/icon-hamburger.svg" alt="icon-hamburger" id="hamburger">
+      <img src="./images/icon-close.svg" alt="icon-close" id="close">
+    </div>
+    <ul class="nav_ul">
+      <li class="nav-links"><a href="#how_we_work" aria-label="How we work">How we work</a></li>
+      <li class="nav-links"><a href="#features" aria-label="Blog">Blog</a></li>
+      <li class="nav-links"><a href="#footer" aria-label="Account">Account</a></li>
+      <li class="nav-links view_plans"><a href="#view_plans" aria-label="View plans">View plans</a></li>
+    </ul>
+  </nav>
+
+  <header id="view_plans">
+    <picture>
+      <source media="(min-width:426px)" srcset='./images/image-intro-desktop.jpg'>
+      <img src="./images/image-intro-mobile.jpg" alt="happy insure family">
+    </picture>
+    <div class="header-text">
+      <h1>Humanizing your insurance.</h1>
+      <p>Get your life insurance coverage easier and faster. We blend our expertise
+        and technology to help you find the plan that’s right for you. Ensure you
+        and your loved ones are protected.</p>
+      <button>View plans</button>
+    </div>
+  </header>
+
+  <main>
+    <h1>We’re different</h1>
+    <div id="features">
+      <section class="features_section">
+        <img src="./images/icon-snappy-process.svg" alt="icon-snappy-process">
+        <h2>Snappy Process</h2>
+        <p>Our application process can be completed in minutes, not hours. Don’t get
+          stuck filling in tedious forms.</p>
+      </section>
+      <section class="features_section">
+        <img src="./images/icon-affordable-prices.svg" alt="icon-affordable-prices">
+        <h2>Affordable Prices</h2>
+        <p>We don’t want you worrying about high monthly costs. Our prices may be low,
+          but we still offer the best coverage possible.</p>
+      </section>
+      <section class="features_section">
+        <img src="./images/icon-people-first.svg" alt="icon-people-first">
+        <h2>People First</h2>
+        <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make
+          sure you’re covered when you need it.</p>
+      </section>
+    </div>
+    <section id="how_we_work">
+      <h2>Find out more about how we work</h2>
+      <button>How we work</button>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer_top">
+      <a href="https://www.facebook.com/drougnov.bd.9" aria-label="header-logo" class="logo"><img src="./images/logo.svg" alt="logo"></a>
+      <ul>
+        <li><a href="#" aria-label="icon-facebook"><img src="./images/icon-facebook.svg" alt="icon-facebook"></a></li>
+        <li><a href="#" aria-label="icon-twitter"><img src="./images/icon-twitter.svg" alt="icon-twitter"></a></li>
+        <li><a href="#" aria-label="icon-pinterest"><img src="./images/icon-pinterest.svg" alt="icon-pinterest"></a>
+        </li>
+        <li><a href="#" aria-label="icon-instagram"><img src="./images/icon-instagram.svg" alt="icon-instagram"></a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="footer_middle">
+      <div class="links">
+        <p>Our company</p>
+        <ul>
+          <li><a href="#">How we work</a></li>
+          <li><a href="#">Why insure</a></li>
+          <li><a href="#">View plans</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <p>Help me</p>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <p>Contact</p>
+        <ul>
+          <li><a href="#">Sales</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Live chat</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <p>Others</p>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Licenses</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="image-container">
-        <img src="./images/hero-desktop.jpg" class="hero-desktop" alt="hero-desktop">
-        <img src="./images/hero-mobile.jpg" class="hero-mobile" alt="hero-mobile">
-    </div>
-
-    <div class="container clear-fix">
-        <div class="content">
-            <h1></h1> <!-- Heading text will be set by JavaScript -->
-            <p></p> <!-- Intro text will be set by JavaScript -->
-
-            <form action="#" method="post">
-                <div class="form-group">
-                    <input type="email" name="email" id="email" placeholder="Email Address">
-                    <img src="./images/icon-error.svg" class="icon-error" alt="icon-error">
-                    <button type="button" id="submit">
-                        <img src="./images/icon-arrow.svg" alt="icon-arrow">
-                    </button>
-                </div>
-                <p class="text-error"></p> <!-- Error text will be set by JavaScript -->
-            </form>
-        </div>
-    </div>
-
-    <footer>
-        <p class="attribution"></p> <!-- Footer text will be set by JavaScript -->
-    </footer>
-
-    <script src="./main.js"></script>
+<div class="footer_bottom">
+  Bootcamp 2023 by <a href="https://www.mlab.co.za" target="_blank">CodeTribe</a>. 
+  Developed by <a href="#">Your Name Here and link to your portfolio website</a>.
+</div>
+</footer>
 </body>
 </html>
+
+
+<!-- Source Frontend Mentor: https://www.frontendmentor.io -->
